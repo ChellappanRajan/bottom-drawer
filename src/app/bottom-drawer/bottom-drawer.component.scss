@@ -1,0 +1,69 @@
+:host {
+  --transform-y:'400px';
+  --border-top-left-radius:'20px';
+  --border-top-right-radius:'20px';
+  --border-radius:0;
+  --overflow:'hidden';
+}
+
+.container{
+  position: absolute;
+  bottom: 0;
+  transition: transform .4s cubic-bezier(0.4,0.0,0.2,1);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.wrapper{
+  transform: translateY(var(--transform-y));
+  height: 100%;
+  position: relative;
+  background: rgb(245, 243, 243);
+  border-top-right-radius: var(--border-top-right-radius);
+  border-top-left-radius: var(--border-top-left-radius);
+}
+.border{
+  border: 0;
+}
+
+.dragby-wrapper{
+  display: flex;
+  height: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.drag-by{
+  border-radius: 2;
+  height: 4px;
+  width: 24px;
+  margin: auto;
+  background-color: #dadce0;
+}
+.b{
+  transition: border-radius .2s;
+}
+
+button{
+   position: relative;
+   right: 10px;
+    width: 24px;
+    height: 24px;
+    transition: box-shadow 365ms 0ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border: 0;
+    background: 0 0;
+}
+
+.content{
+  position: relative;
+  height: 100%;
+  // overflow: scroll;
+  overflow: var(--overflow);
+}
+
+.content div{
+  overflow: var(--overflow);
+}

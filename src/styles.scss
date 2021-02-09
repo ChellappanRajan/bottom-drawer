@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  touch-action: none;
+  // background-color: rgba(0,0,0,.1025);
+  background-color: rebeccapurple
+}
+app-root{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
